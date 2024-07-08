@@ -43,6 +43,7 @@
     <p>Search Tool.</p>
     <label for="search">Search:</label>
     <input type="search" id="search" name="search" required minlength="1" size="10" />
+    <input button type="submitSearch" value="Search"/>
     <!-- This tool reveals random items from the database given custom input restrictions. -->
     <p>Loot Tool.</p>
     <label for="quantity">Quantity:</label>
@@ -50,6 +51,7 @@
     <label for="type">Type:</label>
     <input list = "type">
     <datalist id = "type">
+      <option value = "All">
       <option value = "Ammo">
       <option value = "Clothing and Worn Gear">
       <option value = "Weapon">
@@ -61,5 +63,6 @@
     <input type="text" id="min" name="min" size="10" />
     <label for="max">Max:</label>
     <input type="text" id="max" name="max" size="10" />
+    <input button type="submitLoot" value="Loot"/>
   </body>
 </html>

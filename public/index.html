@@ -39,7 +39,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <h1>Hello World</h1>
-    <p>I'm a React page.</p>
+    <!-- This tool looks up database information for items, perks, and topics. -->
+    <p>Search Tool.</p>
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" required minlength="1" size="10" />
+    <!-- This tool reveals random items from the database given custom input restrictions. -->
+    <p>Loot Tool.</p>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required minlength="1" size="10" />
+    <label for="type">Type:</label>
+    <input list = "type">
+    <datalist id = "type">
+      <option value = "Ammo">
+      <option value = "Clothing and Worn Gear">
+      <option value = "Weapon">
+      <option value = "Drug and Consumable">
+      <option value = "Tools">
+    </datalist>
+    Rarity:
+    <label for="min">Min:</label>
+    <input type="text" id="min" name="min" size="10" />
+    <label for="max">Max:</label>
+    <input type="text" id="max" name="max" size="10" />
   </body>
 </html>
